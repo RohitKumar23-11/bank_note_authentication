@@ -1,2 +1,18 @@
 # bank_note_authentication
 predicting the note is authenticate or not
+
+
+TECHNICAL REPORT OF THE PROGRAMMING TEST
+
+Abstract - Machine Learning a subset of Artificial Intelligence. It helps us to do works more frequently and easily. An Artificial Neural Network is a part of deep learning. In this project/task we will see how a simple deep learning model can very accurately predict the note/currency is correct or not.
+
+Introduction – using machine learning is very important now days for every organization from government to private or space sector companies or defense sector companies all of them are using Machine learning technique to create much better products or services. A deep learning model can help us to do every type of work like detecting various different objects or even try to predict stock market. In this project we will use simple deep learning model to predict the result. We will also the accuracy, f2-score etc. of the model and see how correctly the deep learning model work with even a small number of data.
+
+Review of the project 
+First we import the basic libraries after that we read the csv file by calling it (with the path) after that we do some “exploratory data analysis” of the data to check the data type, any value is missing or not etc. After that we do data visualization for much easier understanding of data that is what is the data type, how they are correlated etc. We also look the mean, median, standard deviation etc. of the data through table and plots.
+ In data preprocessing we drop the target value from the data that is class in this case and store it in another variable called ‘y’ in this case and other variables in ‘X’. After that we call or import the deep learning models, libraries etc. for training, validating and test the data. Then we split the data into train and test set and stratifies the data so it can learn in all type of data. I took 20% data as test data because the data we have is very little so I think it will enough to test the model in 20% of data. 
+In model building I used kernel as uniform because I think it is useful to use kernel uniform because the data is very few and if the kernel is uniform then it will distribute the weights uniformly to all the training data and I think it will produce the good result. I also use activation function “relu” because in over case/project we try to predict the correct and false note and “relu” give output positive or zero otherwise which is very good for our project because we try to detect the false note to it will raise one to false note and for other notes it will give zero. 
+I used sigmoid activation function because it ranges between 0 to 1. So, it can predict the chance of any note to have false or not like it can predict that a note has chance of 97% accurate/authenticate note so we can say that, this note is authenticate or true/correct.  
+After that we can compile and train the model with the neural network. In this project/task use batch sixe 32 because using power of the 2 for batch size is a good practice, and I use epochs 100 because I try the with 500 hundred epochs and with 100 epochs and the result is not much different and the accuracy is only drop up to 3% which is manageable I think. I use validation split to 20% so that the data train for each epochs have a good amount of data to validate their result and pick the best result.
+After that I visualize the accuracy of training, validation and test data with each other’s. I also produce the table of precision, recall, f1-score and support and we can see that this all metrics and measuring parameters are above 0.95 which is a very good sign/result.
+
